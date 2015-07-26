@@ -15,5 +15,10 @@
     "engine"
   ],
   "author": "Igor Djachenko",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": "https://github.com/djachenko/layout-engine-plugin/issues",
+  "repository" : {
+    "type" : "git",
+    "url" : "djachenko/layout-engine-plugin"
+  }
 }
