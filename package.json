@@ -1,0 +1,19 @@
+{
+  "name": "layout-engine-plugin",
+  "version": "0.0.1",
+  "description": "Small utility for browser layout engine determination",
+  "main": "src/layout-engine-plugin.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "browser",
+    "layout",
+    "engine"
+  ],
+  "author": "Igor Djachenko",
+  "license": "MIT"
+}
