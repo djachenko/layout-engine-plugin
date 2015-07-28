@@ -2,7 +2,7 @@
 Small plugin library for browser layout engine detection
 
 Lightweight JavaScript-based plugin for browser layout engine detection. Written in vanilla Javascript, it doesn't depend on any other library
-[![Build Status](https://travis-ci.org/djachenko/layout-engine-plugin.svg?branch=master)](https://travis-ci.org/djachenko/layout-engine-plugin)
+[![Build Status](https://travis-ci.org/djachenko/layouter.svg?branch=master)](https://travis-ci.org/djachenko/layouter)
 
 ## Installatiion
 ###As jQuery plugin
