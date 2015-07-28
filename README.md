@@ -1,6 +1,4 @@
 # Layouter
-Small plugin library for browser layout engine detection
-
 Lightweight JavaScript-based plugin for browser layout engine detection. Written in vanilla Javascript, it doesn't depend on any other library
 
 [![Build Status](https://travis-ci.org/djachenko/layouter.svg?branch=master)](https://travis-ci.org/djachenko/layouter)
@@ -13,7 +11,7 @@ Include script after the jQuery library:
 ```
 
 ###As standalone library
-Simply include this script
+Simply include this script to your page:
 ```html
 <script src="/path/to/layouter.js"></script>
 ```
@@ -67,7 +65,20 @@ Returns layout engine version as string
 
 ## Development
 ### Test
+For running tests execute following command:
 ```sh
 npm test
+```
+Tests are described in test/tests_description.json using following format:
+```js
+{
+    "name"    : "Gecko", //test name
+    "ua"      : "Mozilla/5.0 (X11; Linux x86_64; rv:2.0b9pre) Gecko/20110111 Firefox/4.0b9pre", //user agent string which will be passed as parameter to Layouter.parse()
+    "expect"  : //result expected to be returned
+    {
+        "name"    : "Gecko", //layout engine name
+        "version" : "2.0b9pre" //its version
+    }
+}
 ```
 
