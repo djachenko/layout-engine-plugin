@@ -1,8 +1,8 @@
 {
-  "name": "layout-engine-plugin",
+  "name": "layouter",
   "version": "0.0.1",
   "description": "Small utility for browser layout engine determination",
-  "main": "src/layout-engine-plugin.js",
+  "main": "src/layouter.js",
   "directories": {
     "test": "test"
   },
@@ -16,9 +16,9 @@
   ],
   "author": "Igor Djachenko",
   "license": "MIT",
-  "bugs": "https://github.com/djachenko/layout-engine-plugin/issues",
+  "bugs": "https://github.com/djachenko/layouter/issues",
   "repository" : {
     "type" : "git",
-    "url" : "djachenko/layout-engine-plugin"
+    "url" : "djachenko/layouter"
   }
 }

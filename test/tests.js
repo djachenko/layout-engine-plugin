@@ -1,12 +1,12 @@
 var should = require('should');
-var LayoutEngine = require('./../src/layout-engine-plugin');
+var Layouter = require('./../src/layouter');
 var tests = require('./tests_description.json');
 
-describe('LayoutEngine', function () {
-    var layoutEngine;
+describe('Layouter', function () {
+    var layouter;
 
     before(function(){
-        layoutEngine = new LayoutEngine();
+        layouter = new Layouter();
     });
 
     tests.forEach(function(test){
@@ -15,7 +15,7 @@ describe('LayoutEngine', function () {
             var expect;
 
             beforeEach(function() {
-                result = layoutEngine.parse(test.ua);
+                result = layouter.parse(test.ua);
                 expect = test.expect;
             });
 
