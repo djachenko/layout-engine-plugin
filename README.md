@@ -2,16 +2,21 @@
 Small plugin library for browser layout engine detection
 
 Lightweight JavaScript-based plugin for browser layout engine detection. Written in vanilla Javascript, it doesn't depend on any other library
+
 [![Build Status](https://travis-ci.org/djachenko/layouter.svg?branch=master)](https://travis-ci.org/djachenko/layouter)
 
 ## Installatiion
 ###As jQuery plugin
 Include script after the jQuery library:
+```html
 <script src="/path/to/layouter.js"></script>
+```
 
 ###As standalone library
 Simply include this script
+```html
 <script src="/path/to/layouter.js"></script>
+```
 
 ###As node.js module:
 ```sh
