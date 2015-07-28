@@ -3,7 +3,7 @@ Lightweight JavaScript-based plugin for browser layout engine detection. Written
 
 [![Build Status](https://travis-ci.org/djachenko/layouter.svg?branch=master)](https://travis-ci.org/djachenko/layouter)
 
-## Installatiion
+## Installation
 ###As jQuery plugin
 Include script after the jQuery library:
 ```html
