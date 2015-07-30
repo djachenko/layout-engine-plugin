@@ -1,4 +1,4 @@
-(function() {
+(function($) {
     var LayoutEngine = function () {
         this.parse = function (uaString) {
             var match = /(windows.+\sedge)\/([\w\.]+)/i.exec(uaString) ||
@@ -40,15 +40,15 @@
         exports.Layouter = LayoutEngine;
     }
 
+    var engine = new LayoutEngine().parse(window.navigator.userAgent);
+
     if (typeof(window) !== 'undefined' &&
         typeof(window.navigator) !== "undefined" &&
         typeof(window.navigator.userAgent) !== 'undefined') {
-        var engine = new LayoutEngine().parse(window.navigator.userAgent);
-
-        if (jQuery) {
-            jQuery.engine = engine;
-        }
-
         window.engine = engine;
     }
-})();
+
+    if ($) {
+        $.engine = engine;
+    }
+})(jQuery);
