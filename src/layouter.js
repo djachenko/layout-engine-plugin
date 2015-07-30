@@ -12,7 +12,7 @@
  */
 
 (function($) {
-    var LayoutEngine = function () {
+    var Layouter = function () {
         this.parse = function (uaString) {
             var match = /(windows.+\sedge)\/([\w\.]+)/i.exec(uaString) ||
                 /(presto|webkit|trident|netfront|netsurf|amaya|lynx|w3m)\/([\w\.]+)/i.exec(uaString) ||
@@ -47,13 +47,13 @@
     if (typeof(exports) !== "undefined") {
         // nodejs env
         if (typeof module !== "undefined" && module.exports) {
-            exports = module.exports = LayoutEngine;
+            exports = module.exports = Layouter;
         }
 
-        exports.Layouter = LayoutEngine;
+        exports.Layouter = Layouter;
     }
 
-    var engine = new LayoutEngine().parse(window.navigator.userAgent);
+    var engine = new Layouter().parse(window.navigator.userAgent);
 
     if (typeof(window) !== 'undefined' &&
         typeof(window.navigator) !== "undefined" &&
