@@ -1,3 +1,16 @@
+/*!
+ * layouter 0.0.1
+ * https://github.com/djachenko/layouter
+ *
+ * Description: layouter is lightweight JavaScript-based plugin for browser layout engine detection
+ * Author: Igor Djachenko
+ * Based on:
+ * * jquery-browser-plugin (https://github.com/gabceb/jquery-browser-plugin)
+ * * ua-parser-js (https://github.com/faisalman/ua-parser-js)
+ *
+ * Copyright: Copyright © 2015 Igor Djachenko under dual MIT license.
+ */
+
 (function($) {
     var LayoutEngine = function () {
         this.parse = function (uaString) {
