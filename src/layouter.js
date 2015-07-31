@@ -11,7 +11,7 @@
  * Copyright: Copyright © 2015 Igor Djachenko under dual MIT license.
  */
 
-(function($) {
+(function() {
     var Layouter = function () {
         this.parse = function (uaString) {
             var match = /(windows.+\sedge)\/([\w\.]+)/i.exec(uaString) ||
@@ -53,15 +53,15 @@
         exports.Layouter = Layouter;
     }
 
-    var engine = new Layouter().parse(window.navigator.userAgent);
-
     if (typeof(window) !== 'undefined' &&
         typeof(window.navigator) !== "undefined" &&
         typeof(window.navigator.userAgent) !== 'undefined') {
-        window.engine = engine;
-    }
+        var engine = new Layouter().parse(window.navigator.userAgent);
 
-    if ($) {
-        $.engine = engine;
+        window.engine = engine;
+
+        if ($) {
+            $.engine = engine;
+        }
     }
-})(jQuery);
+})();
